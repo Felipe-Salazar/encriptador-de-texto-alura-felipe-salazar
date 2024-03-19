@@ -1,10 +1,16 @@
 .container{
-    position: relative;
-    background: #FFFFFF;
+    width: 90%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #F3F5FC;
 }
 
+
 .logoAlura{
-    display: flex;
+    display: inline;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
@@ -13,7 +19,7 @@
     position: absolute;
     width: 120px;
     height: 48px;
-    left: 0px;
+    left: 30px;
     top: 40px;
 }
 
@@ -432,24 +438,16 @@
 
 /*Responsive Desing*/
 
-@media (max-width: 912px) {
-    .container{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .logoAlura{
-        margin: 20 auto 0 auto;
-        padding: 0px;
-        gap: 40px;
-
+@media screen and (max-width:1000px){
     
-        width: 400px;
-        height: 160px;
-    }
+.logoAlura{
+    width: 120px;
+    height: 48px;
+    gap: 0px;
 
-    .ingreseTexto{
-        width: 100%;
-    }
+    left: 10px;
+    
+}
+
 
 }

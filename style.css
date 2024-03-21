@@ -1,36 +1,42 @@
-.container{
-    height: 100h;
-    width: 90w;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+body{
     background: #F3F5FC;
 }
 
+.header{
+    width: 95%;
+    margin: auto;
+}
 
 .logoAlura{
-    display: inline;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
+   margin-top: 40px;
+}
 
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 30px;
-    top: 40px;
+.main{
+    width: 85%;
+    margin: auto 40px auto auto;
+
+    display: grid;
+    grid-template-columns: 45% 28% 25%;
+    min-height: calc(100vh - 91px - 72px);
+    align-items: end;
+}
+
+.textoEncriptar{
+    height: 800px;
 }
 
 .ingreseTexto{
+    margin-top: 10%;
+    display: inline;
+    resize: none;
+
     border: none;
     color: #0A3871;
-    position: absolute;
-    width: 677px;
+    /*position: absolute;*/
+    width: 90%;
     height: 500px;
-    left: 240px;
-    top: 168px;
+    /*left: 240px;
+    top: 168px;*/
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
@@ -38,28 +44,29 @@
     line-height: 150%;
 }
 
-.copiar{
-    position: absolute;
-    top: 700px;
-    left: 650px;
 
-    width: 228px;
+.ingreseTexto::placeholder{
+    color: #0A3871;
+}
+
+.ingreseTexto:focus, .ingreseTexto:active{
+    border: none;
+    outline: none;
+}
+
+.copiar{
+    margin-left: 60%;
+    max-width: 228px;
+    width: 30%;
     height: 67px;
 
     background: #a1bbe0;
     border: none;
     border-radius: 24px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     transition: 0.5s all;
 }
 
 .copiar p{
-    width: 228px;
-    height: 19px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
@@ -67,10 +74,6 @@
     line-height: 19px;
 
     color: #0A3871;
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
 /*.copiar:disabled {
@@ -87,36 +90,24 @@
     transform: scale(1.02);
 }
 
-.ingreseTexto::placeholder{
-    color: #0A3871;
-}
-
-.ingreseTexto:focus, .ingreseTexto:active{
-    border: none;
-    outline: none;
-}
-
 .reglas{
     display: flex;
+    margin-top: 16px;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 8px;
 
-    position: absolute;
+    /*position: absolute;
+    left: 240px;
+    top: 800px;*//*851*/
     width: 230px;
     height: 18px;
-    left: 240px;
-    top: 800px;/*851*/
 }
 
 .reglas img{
     width: 16px;
     height: 16px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .reglas p{
@@ -130,52 +121,35 @@
     line-height: 150%;
 
     color: #495057;
-
     opacity: 0.8;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .botones{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    margin-top: 16px;
     padding: 0px;
     gap: 24px;
 
-    position: absolute;
-    width: 680px;
-    height: 67px;
+    flex-wrap: wrap;
+
+    /*position: absolute;
     left: 240px;
-    top: 835px;
+    top: 835px;*/
 }
 
 .encriptar{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
 
-    width: 328px;
-    height: 67px;
+    max-width: 328px;
+    width: 40%;
 
     background: #0A3871;
     border: none;
     border-radius: 24px;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     transition: 0.5s all;
 }
 
 .encriptar p{
-    width: 280px;
-    height: 19px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -184,10 +158,6 @@
     text-align: center;
 
     color: #FFFFFF;
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
 .encriptar:hover{
@@ -196,31 +166,20 @@
 }
 
 .desencriptar{
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
     gap: 8px;
 
-    width: 328px;
-    height: 67px;
+    max-width: 328px;
+    width: 40%;
 
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
     transition: 0.5s all;
 }
 
 .desencriptar p{
-    width: 280px;
-    height: 19px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -229,25 +188,31 @@
     text-align: center;
 
     color: #0A3871;
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
 .desencriptar:hover{
     background: #b7cdec;
     transform: scale(1.05);
+    box-shadow: 60px -16px #343A40;
 }
 
 .textoDesencriptado{
-    position: absolute;
-    width: 400px;
-    height: 844px;
+    /*position: relative;
     left: 1000px;
-    top: 40px;
+    top: 40px;*/
+    max-width: 400px;
+    width: 90%;
+    height: calc(100% + 48px);
+    text-align: center;
+    padding: 32px;
+    box-sizing: border-box;
 
     background: #d9e1eb;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border: solid 1px #79aceb;
@@ -255,30 +220,16 @@
 }
 
 .dibujo{
-    position: absolute;
-    width: 336px;
-    height: 304px;
-    left: 30px;
-    top: 183px;
+    width: 100%;
 }
 
 .textoDibujo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
     gap: 16px;
-
-    position: absolute;
-    width: 336px;
-    height: 122px;
-    left: 35px;
-    top: 539px;
+    text-align: center;
 }
 
 .sinMensaje{
-    width: 336px;
-    height: 58px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -286,42 +237,101 @@
     font-size: 24px;
     line-height: 120%;
 
-    text-align: center;
-
     color: #343A40;
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .clausula{
-    width: 336px;
-    height: 48px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
 
-    text-align: center;
-
     color: #495057;
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
+.final{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.idiomas{
+    margin: 0 auto;
+    display: flex;
+    padding: 0px;
+
+    /*position: relative;
+    left: 1550px;
+    top: 225px;*/
+    max-width: 180px;
+    width: 50%;
+    max-height: 60px;
+    height: auto;
+}
+
+.es{
+    padding: 24px;
+    gap: 8px;
+
+    max-width: 90px;
+    width: 50%;
+
+    background: #0A3871;
+    border: none;
+    border-radius: 24px 0 0 24px;
+
+    transition: 0.5s all;
+}
+
+.es p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.en{
+    padding: 24px;
+
+    max-width: 90px;
+    width: 50%;
+
+    background: #D8DFE8;
+    border: 1px solid #9dbde6;
+    border-radius: 0 24px 24px 0;
+
+    transition: 0.5s all;
+}
+
+.en p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0A3871;
+}
+
+.en:hover{
+    background: #9dbde6;
+}
+
+
 .creditos{
-    position: absolute;
-    width: 400px;
-    height: 344px;
+    /*position: relative;
     left: 1450px;
-    top: 310px;
+    top: 310px;*/
+    max-width: 400px;
+    width: 100%;
+    height: 344px;
+    margin: 7% auto 0 auto;
 
     background: #ffffff;
 
@@ -331,31 +341,46 @@
 }
 
 .logos{
-    position: absolute;
-    top: -60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .oracle{
-    position: absolute;
-    width: 300px;
-    left: 50px;
-    top: 120px;
+    max-width: 300px;
+    width: 80%;
+    margin: 13% auto 0 auto;
 }
 
 .challenges{
-    position: absolute;
-    width: 250px;
-    left: 80px;
-    top: 210px;
+    max-width: 250px;
+    width: 70%;
+    margin: 8% auto 0 auto;
 }
 
 .develop{
-    position: absolute;
-    top: -110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imgDev{
+    margin: 10% auto 0 auto;
+    max-width: 80px;
+    width: 30%;
+    display: flex;
 }
 
 .develop img{
-    width: 70px;
+    max-width: 35px;
+    width: 45%;
+}
+
+.git{
+    margin-right: 10%;
 }
 
 .desarrollado{
@@ -363,17 +388,7 @@
     font-weight: bold;
     color: #0A3871;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
-    position: absolute;
-    width: 336px;
-    height: 122px;
-    left: 75px;
-    top: 375px;
+    margin-top: 2%;
 }
 
 .copy{
@@ -381,126 +396,190 @@
     font-size: 13px;
     color: #0A3871;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
-    position: absolute;
-    width: 336px;
-    height: 122px;
-    left: 50px;
-    top: 410px;
-}
-
-.idiomas{
-    
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-
-    position: absolute;
-    width: 180px;
-    height: 67px;
-    left: 1550px;
-    top: 225px;
-}
-
-.es{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-
-    width: 90px;
-    height: 60px;
-
-    background: #0A3871;
-    border: none;
-    border-radius: 24px 0 0 24px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    transition: 0.5s all;
-}
-
-.es p{
-    width: px;
-    height: 0px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 19px;
-    text-align: center;
-
-    color: #FFFFFF;
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-}
-
-.en{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-
-    width: 90px;
-    height: 60px;
-
-    background: #D8DFE8;
-    border: 1px solid #9dbde6;
-    border-radius: 0 24px 24px 0;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    transition: 0.5s all;
-}
-
-.en p{
-    width: px;
-    height: 0px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 19px;
-    text-align: center;
-
-    color: #0A3871;
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-}
-
-.en:hover{
-    background: #9dbde6;
+    margin-top: 3%;
 }
 
 /*Responsive Desing*/
 
-@media screen and (max-width:1000px){
+@media screen and (max-width: 1600px) {
     
-.logoAlura{
-    width: 120px;
-    height: 48px;
-    gap: 0px;
+    .main{
+        grid-template-columns: 70% 30%;
+        align-items: center;
+    }
 
-    left: 10px;
-    
+    .textoDesencriptado{
+        .
+    }
+
+    .final{
+        height: 100%;
+    }
+
+    .idiomas{
+        margin: 5% auto 0 53%;
+    }
+
+    .creditos{
+        max-width: 90%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        margin: 2% auto 2% 19%;
+    }
+
+    .logos{
+        width: 25%;
+        /*margin: auto 0 auto 20%;*/
+    }
+
+    .oracle{
+        margin: 0 auto;
+    }
+
+    .challenges{
+        margin: 5% auto 0 auto;
+    }
+
+    .develop{
+        width: 40%;
+    }
+
+    .imgDev{
+        margin: 0 auto;
+        width: 15%;
+    }
+
+    .desarrollado, .copy{
+        margin: 2% 0 0 0;
+    }
+
+    .git{
+        margin-right: 10%;
+    }
+
+    .copy{
+        font-size: 10px;
+    }
+
 }
 
+@media screen and (max-width: 1000px){
+
+    .main{
+        grid-template-columns: 1fr;
+        width: auto;
+        margin: auto 40px;
+    }
+
+    .textoDesencriptado{
+        height: 100%;
+    }
+
+    .ingreseTexto{
+        height: 60%;
+        margin-top: 15%;
+    }
+
+    .copiar{
+        margin-top: 3%;
+        margin-left: 35%;
+        padding: 20px;
+        height: 40px;
+        position: relative;
+    }
+
+    .copiar p{
+        font-size: 15px;
+        position: relative;
+        top: -10px;
+    }
+
+    .botones{
+        justify-content: center;
+    }
+
+    .encriptar, .desencriptar{
+        width: 45%;
+        padding: 20px;
+    }
+
+    .textoDesencriptado{
+        max-width: 70%;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .dibujo{
+        display: none;
+    }
+
+    .idiomas{
+        margin: 5% auto 0 auto;
+    }
+
+    .creditos{
+        margin: 2% auto 2% auto;
+    }
+
+
+}
+
+@media screen and (max-width: 650px) {
+    
+    .main{
+        margin: auto 16px;
+    }
+
+    .textoEncriptar{
+        height: 730px;
+    }
+
+    .ingreseTexto{
+        margin-top: 10%;
+        width: 100%;
+        height: 400px;
+        font-size: 25px;
+    }
+
+    .encriptar, .desencriptar{
+        max-width: 100%;
+        width: 100%;
+        padding: 24px;
+    }
+
+    .textoDesencriptado{
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0;
+        background: none;
+        border: none;
+    }
+
+    .final{
+        height: 100%;
+    }
+
+    .idiomas{
+        max-width: 100%;
+        width: 80%;
+    }
+
+    .es, .en{
+        max-width: 100%;
+    }
+
+    .creditos{
+        max-width: 100%;
+        height: 80px;
+    }
+
+    .desarrollado{
+        font-size: 12px;
+    }
+
+    .copy{
+        font-size: 8px;
+    }
 
 }

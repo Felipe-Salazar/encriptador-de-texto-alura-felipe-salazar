@@ -11,29 +11,30 @@
 </head>
 <body>
     <header>
-        <img class="logoAlura" src="Images/Logo.png" alt="Logo Alura">
+        <div class="header">
+            <img class="logoAlura" src="Images/Logo.png" alt="Logo Alura">
+        </div>
     </header>
-    <div class="container">
-        <main> 
+        <main>
+        <div class="main">
             <div class="textoEncriptar">
                 <textarea name="Ingrese Texto" class="ingreseTexto" id="ingreseTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
                 <button class="copiar" id="copiar   " type="button" onclick="copiar()">
                 <p>Copiar</p>
                 </button>
-            </div>
+                <div class="reglas">
+                    <img src="Images/Exclamacion.png" alt=" Exclamación">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
 
-            <div class="reglas">
-                <img src="Images/Exclamacion.png" alt=" Exclamación">
-                <p>Solo letras minúsculas y sin acentos</p>
-            </div>
-
-            <div class="botones">
-                <button class="encriptar" type="button" onclick="encriptar()">
-                    <p>Encriptar</p>
-                </button>
-                <button class="desencriptar" type="button" onclick="desencriptar()">
-                    <p>Desencriptar</p>
-                </button>
+                <div class="botones">
+                    <button class="encriptar" type="button" onclick="encriptar()">
+                        <p>Encriptar</p>
+                    </button>
+                    <button class="desencriptar" type="button" onclick="desencriptar()">
+                        <p>Desencriptar</p>
+                    </button>
+                </div>
             </div>
 
             <div class="textoDesencriptado">
@@ -43,24 +44,29 @@
                     <p class="clausula" id="clausula">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
             </div>
-
-            <div class="creditos">
-                <div class="logos">
-                    <img class="oracle" src="Images/Alura-Oracle.png" alt="Logo Alura + Oracle">
-                    <img class="challenges" src="Images/Challenges.png" alt="Logo Alura Challeges">
+            
+            <div class="final">
+                <div class="idiomas">
+                    <button class="es" type="button" onclick="español()"><p>ES</p></button>
+                    <button class="en" type="button" onclick="english()"><p>EN</p></button>
                 </div>
-                <div class="develop">
-                    <p class="desarrollado">Desarrollado por Felipe Salazar</p>
-                    <p class="copy">&copy Copyright Felipe Salazar / Alura Latam - 2024</p>
+                <div class="creditos">
+                    <div class="logos">
+                        <img class="oracle" src="Images/Alura-Oracle.png" alt="Logo Alura + Oracle">
+                        <img class="challenges" src="Images/Challenges.png" alt="Logo Alura Challeges">
+                    </div>
+                    <div class="develop">
+                        <div class="imgDev">
+                            <img class="git" src="Images/Git.png" alt="Github">
+                            <img src="Images/LinkedIn.png" alt="LinkedIn">
+                        </div>
+                        <p class="desarrollado">Desarrollado por Felipe Salazar</p>
+                        <p class="copy">&copy Copyright Felipe Salazar / Alura Latam - 2024</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="idiomas">
-                <button class="es" type="button" onclick="español()"><p>ES</p></button>
-                <button class="en" type="button" onclick="english()"><p>EN</p></button>
-            </div>
+        </div>
         </main>
-    </div>
     <script src="index.js"></script>
 </body>
 </html>

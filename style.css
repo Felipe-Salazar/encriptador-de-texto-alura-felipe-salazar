@@ -64,9 +64,8 @@ body{
     border: none;
     border-radius: 24px;
     transition: 0.5s all;
-}
 
-.copiar p{
+    text-align: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
@@ -75,14 +74,6 @@ body{
 
     color: #0A3871;
 }
-
-/*.copiar:disabled {
-    background: #b7cdec;
-}
-
-.copiar:disabled p {
-    color: #3b74b9;
-}*/
 
 .copiar:hover{
     color: #02162e;
@@ -147,9 +138,7 @@ body{
     border-radius: 24px;
 
     transition: 0.5s all;
-}
 
-.encriptar p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -177,9 +166,7 @@ body{
     border-radius: 24px;
 
     transition: 0.5s all;
-}
 
-.desencriptar p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -193,7 +180,6 @@ body{
 .desencriptar:hover{
     background: #b7cdec;
     transform: scale(1.05);
-    box-shadow: 60px -16px #343A40;
 }
 
 .textoDesencriptado{
@@ -214,7 +200,7 @@ body{
     justify-content: center;
     gap: 10px;
 
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    box-shadow: -8px 10px 19px 0px rgb(202, 202, 202);
     border: solid 1px #79aceb;
     border-radius: 32px;
 }
@@ -230,7 +216,6 @@ body{
 }
 
 .sinMensaje{
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -241,6 +226,7 @@ body{
 }
 
 .clausula{
+    margin-top: 3%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -277,11 +263,15 @@ body{
     max-width: 90px;
     width: 50%;
 
-    background: #0A3871;
+    background-color: #0A3871;
     border: none;
     border-radius: 24px 0 0 24px;
 
+    text-decoration: none;
     transition: 0.5s all;
+
+    
+    color: #FFFFFF;
 }
 
 .es p{
@@ -291,8 +281,6 @@ body{
     font-size: 20px;
     line-height: 19px;
     text-align: center;
-
-    color: #FFFFFF;
 }
 
 .en{
@@ -305,7 +293,10 @@ body{
     border: 1px solid #9dbde6;
     border-radius: 0 24px 24px 0;
 
+    text-decoration: none;
     transition: 0.5s all;
+    
+    color: #0A3871;
 }
 
 .en p{
@@ -315,14 +306,67 @@ body{
     font-size: 20px;
     line-height: 19px;
     text-align: center;
-
-    color: #0A3871;
 }
 
 .en:hover{
-    background: #9dbde6;
+    background: #b7cdec;
 }
 
+
+.esDos{
+    padding: 24px;
+    gap: 8px;
+
+    max-width: 90px;
+    width: 50%;
+
+    background-color: #D8DFE8;
+    border: 1px solid #9dbde6;
+    border-radius: 24px 0 0 24px;
+
+    text-decoration: none;
+    transition: 0.5s all;
+
+    
+    color: #0A3871;
+}
+
+.esDos p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.esDos:hover{
+    background: #b7cdec;
+}
+
+.enDos{
+    padding: 24px;
+
+    max-width: 90px;
+    width: 50%;
+
+    background: #0A3871;
+    border-radius: 0 24px 24px 0;
+
+    text-decoration: none;
+    transition: 0.5s all;
+    
+    color: #FFFFFF;
+}
+
+.enDos p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+}
 
 .creditos{
     /*position: relative;
@@ -408,10 +452,6 @@ body{
         align-items: center;
     }
 
-    .textoDesencriptado{
-        .
-    }
-
     .final{
         height: 100%;
     }
@@ -484,15 +524,8 @@ body{
     .copiar{
         margin-top: 3%;
         margin-left: 35%;
-        padding: 20px;
         height: 40px;
-        position: relative;
-    }
-
-    .copiar p{
         font-size: 15px;
-        position: relative;
-        top: -10px;
     }
 
     .botones{
@@ -521,7 +554,6 @@ body{
     .creditos{
         margin: 2% auto 2% auto;
     }
-
 
 }
 
@@ -565,7 +597,7 @@ body{
         width: 80%;
     }
 
-    .es, .en{
+    .es, .en, .esDos, .enDos{
         max-width: 100%;
     }
 
@@ -578,8 +610,8 @@ body{
         font-size: 12px;
     }
 
-    .copy{
-        font-size: 8px;
+    .copiar p{
+        font-size: 0.7em;
     }
 
 }

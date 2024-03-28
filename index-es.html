@@ -19,20 +19,20 @@
         <div class="main">
             <div class="textoEncriptar">
                 <textarea name="Ingrese Texto" class="ingreseTexto" id="ingreseTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-                <button class="copiar" id="copiar   " type="button" onclick="copiar()">
+                <button class="copiar" id="copiar" type="button" onclick="copiar()">
                 <p>Copiar</p>
                 </button>
                 <div class="reglas">
                     <img src="Images/Exclamacion.png" alt=" Exclamación">
-                    <p>Solo letras minúsculas y sin acentos</p>
+                    <p class="advertencia">Solo letras minúsculas y sin acentos</p>
                 </div>
 
                 <div class="botones">
                     <button class="encriptar" type="button" onclick="encriptar()">
-                        <p>Encriptar</p>
+                        Encriptar
                     </button>
                     <button class="desencriptar" type="button" onclick="desencriptar()">
-                        <p>Desencriptar</p>
+                        Desencriptar
                     </button>
                 </div>
             </div>
@@ -40,15 +40,15 @@
             <div class="textoDesencriptado">
                 <img class="dibujo" id="dibujo" src="Images/Muñeco.png" alt="Buscando Encriptación">
                 <div class="textoDibujo">
-                    <p class="sinMensaje" id="sinMensaje">Ningún mensaje fue encotrado</p>
+                    <p class="sinMensaje" id="sinMensaje">Ningún mensaje fue encontrado</p>
                     <p class="clausula" id="clausula">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
             </div>
             
             <div class="final">
                 <div class="idiomas">
-                    <button class="es" type="button" onclick="español()"><p>ES</p></button>
-                    <button class="en" type="button" onclick="english()"><p>EN</p></button>
+                    <a class="es" type="button" disabled><p>ES</p></a>
+                    <a class="en" type="button" href="index-en.html"><p>EN</p></a>
                 </div>
                 <div class="creditos">
                     <div class="logos">
@@ -67,6 +67,6 @@
             </div>
         </div>
         </main>
-    <script src="index.js"></script>
+    <script src="index-es.js"></script>
 </body>
 </html>
